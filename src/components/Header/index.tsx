@@ -15,6 +15,7 @@ export const Header = () => (
     sx={{
       bgcolor: 'primary.dark',
       boxShadow: '0px -4px 10px 6px rgba(0,0,0,0.75)',
+      zIndex: 2,
     }}
   >
     <Container maxWidth='md'>
@@ -24,7 +25,7 @@ export const Header = () => (
           noWrap
           sx={{
             mr: 2,
-            display: { xs: 'none', md: 'flex' },
+            display: { md: 'flex' },
             fontFamily: 'monospace',
             fontWeight: 700,
             letterSpacing: '.3rem',
