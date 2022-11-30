@@ -18,7 +18,7 @@ export const Header = () => (
       zIndex: 2,
     }}
   >
-    <Container maxWidth='md'>
+    <Container maxWidth='lg'>
       <Toolbar disableGutters>
         <Typography
           variant='h5'
@@ -26,7 +26,6 @@ export const Header = () => (
           sx={{
             mr: 2,
             display: { md: 'flex' },
-            fontFamily: 'monospace',
             fontWeight: 700,
             letterSpacing: '.3rem',
             color: 'inherit',
@@ -39,8 +38,11 @@ export const Header = () => (
           {pages.map((page) => (
             <Button
               key={page}
-              size='small'
-              sx={{ my: 2, color: 'white', display: 'block' }}
+              variant='contained'
+              size='medium'
+              color='secondary'
+              sx={{ ml: 10 }}
+              disableElevation
             >
               {page}
             </Button>
