@@ -1,6 +1,6 @@
 import { Box, useTheme } from '@mui/material';
 
-import { Header } from './components/Header';
+import { Navigation } from './components/Navigation';
 import { Body } from './components/Body';
 
 const App = () => {
@@ -8,9 +8,9 @@ const App = () => {
 
   return (
     <Box minHeight='100vh' display='flex' flexDirection='column'>
-      <Header />
+      <Navigation />
       <Body />
-      <Box
+      {/* <Box
         sx={{
           bgcolor: palette.secondary.main,
           bottom: 0,
@@ -18,8 +18,9 @@ const App = () => {
           boxSizing: 'border-box',
           minHeight: 200,
           width: '100%',
+          opacity: 0.25,
         }}
-      ></Box>
+      ></Box> */}
     </Box>
   );
 };

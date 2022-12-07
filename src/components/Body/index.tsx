@@ -8,7 +8,6 @@ export const Body = () => {
   return (
     <Box
       sx={{
-        bgcolor: 'primary.main',
         position: 'relative',
         alignItems: 'center',
         display: 'flex',
@@ -22,14 +21,7 @@ export const Body = () => {
           p: 10,
           justifyContent: 'space-between',
         }}
-      >
-        <MapContainer title='Main mapy' maps={[0, 1]} image={lostIslandImage} />
-        <MapContainer
-          title='Aktuální rotace'
-          maps={[0]}
-          image={lostIslandImage}
-        />
-      </Container>
+      ></Container>
     </Box>
   );
 };
